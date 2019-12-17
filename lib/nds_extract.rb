@@ -18,7 +18,6 @@ def directors_totals(nds)
   #
   #
   # Be sure to return the result at the end!
-  pp nds
   total_hash = {}
   first_index = 0 
     while first_index < nds.length 
@@ -27,7 +26,7 @@ def directors_totals(nds)
         while movie_number < nds[first_index][:movies].length
           movies_data = nds[first_index][:movies][movie_number]
           total_amount = movies_data[:worldwide_gross]
-          total_hash[name_of_director] = total_amount
+          total_hash[name_of_director] += total_amount
           movie_number += 1
         end
       first_index += 1
