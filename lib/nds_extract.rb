@@ -18,6 +18,7 @@ def directors_totals(nds)
   #
   #
   # Be sure to return the result at the end!
+  pp nds
   total_hash = {}
   first_index = 0 
     while first_index < nds.length 
